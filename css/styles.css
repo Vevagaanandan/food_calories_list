@@ -1,0 +1,191 @@
+/* General START */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cursorPointer{
+    cursor: pointer;
+}
+/* General END */
+
+.title{
+    text-align: center;
+    background-color: #28a628;
+    padding: 20px 0px;
+    color: #fff;
+}
+
+/* Display Form */
+.formDisplay{
+    padding-top: 50px;
+    width: 60%;
+    margin: auto;
+}
+
+.formDisplay table{
+    margin: auto;
+}
+
+.foodDisplay-text{
+    background-color: #28a628;
+    color: #fff;
+}
+
+
+
+.btn-row{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.btn-row button{
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #28a628;
+    border-radius: 5px;
+    border: 2px solid #28a628;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.btn-row button:hover{
+    background-color: #fff;
+    color: #28a628;
+    border: 2px solid #28a628;
+}
+
+
+/* Table Display */
+.tableDisplay{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.tableDisplay table{
+    margin: auto;
+    text-align: center;
+    border-spacing: 0px !important;
+    color: #fff;
+}
+
+.tblHeaderClass{
+    width: 200px;
+}
+
+.tableDisplay th,
+.tableDisplay td{
+    padding: 15px 0px;
+}
+
+.tableDisplay tr:nth-child(odd){
+    background-color: #2ea92e ;
+}
+
+.tableDisplay tr:nth-child(even){
+    background-color: #20c920;
+}
+
+a.editDelete-btn{
+    color: #fff ;
+}
+
+a.editDelete-btn:hover{
+    color: rgb(203, 198, 198);
+}
+
+
+/* Message START */
+.msg{
+    text-align: center;
+    background-color: lightgreen;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px 0px;
+}
+
+.success{
+    background-color: #2cde2c;
+}
+
+.error{
+    background-color: tomato;
+}
+
+.noDataEntered{
+    text-align: center;
+    color: #fff;
+    background-color: lightseagreen;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0px;
+}
+/* Message END */
+
+/* Responsive START */
+@media only screen and (max-width: 950px){
+    section{
+        width: 90%;
+        margin: auto;
+    }
+
+    .foodDisplay-input{
+        width: 100%;
+        border: none;
+        box-shadow: 0 0 20px 0px rgb(0 0 0 / 20%);
+        padding: 5px 0px;
+    }
+
+    .tableDisplayOne tr{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+
+    td.foodDisplay-text{
+        margin-bottom: 5px;
+        padding: 3px;
+    }
+
+    .btn-row{
+        width: auto;
+    }
+    
+    th.tblHeaderClass{
+        font-size: 14px;
+    }
+
+    #tableTwo td{
+        font-size: 12px;
+    }
+
+    .msg{
+        font-size: 20px;
+    }
+
+    .title h1{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 950px){
+    .foodDisplay-text{
+        padding: 5px 20px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .foodDisplay-input{
+        padding: 0px 5px;
+        width: 300px;
+        height: 30px;
+    }
+
+    
+}
